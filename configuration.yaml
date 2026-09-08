@@ -1,0 +1,47 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+# template: !include template.yaml
+
+
+template:
+  - triggers:
+      - trigger: homeassistant
+        event: start
+      - trigger: time_pattern
+        minutes: "/10"
+
+    actions:
+      - action: nordpool.get_prices_for_date
+        data:
+          config_entry: 01M06P1DCNXDYQY4KBZ5PVDZQP
+          date: "{{ now().date() }}"
+          areas: SE3
+          currency: SEK
+        response_variable: today_price
+      - action: nordpool.get_prices_for_date
+        data:
+          config_entry: 01M06P1DCNXDYQY4KBZ5PVDZQP
+          date: "{{ now().date() + timedelta(days=1) }}"
+          areas: SE3
+          currency: SEK
+        response_variable: tomorrow_price
+
+    sensor:
+      - name: "Nord Pool SE3 Tomorrow"
+        unique_id: nord_pool_se3_tomorrow
+        state: "{{ now().isoformat() }}"
+        attributes:
+          prices: >
+            {{ tomorrow_price['SE3'] }}
+          today_prices: >
+            {{ today_price['SE3'] }}
+zeroconf:
+

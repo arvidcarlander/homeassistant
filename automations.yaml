@@ -1,0 +1,18 @@
+- id: '1788126644614'
+  description: ''
+  triggers:
+  - trigger: time
+    at: '23:50:00'
+  conditions: []
+  actions:
+  - action: nordpool.get_prices_for_date
+    metadata: {}
+    data:
+      date: '2026-08-31'
+      config_entry: 01M06P1DCNXDYQY4KBZ5PVDZQP
+    response_variable: nordpool_prices
+  - action: persistent_notification.create
+    data:
+      title: Nord Pool test
+      message: '{{ nordpool_prices }}'
+  mode: single
