@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.liten kiosk",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "type": "sections",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "New section"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "show_state": true,
+                  "type": "glance",
+                  "entities": [
+                    {
+                      "entity": "switch.pump",
+                      "show_last_changed": false,
+                      "icon": "mdi:water-pump"
+                    },
+                    {
+                      "entity": "cover.ute_vattenkran",
+                      "name": {
+                        "type": "device"
+                      },
+                      "show_state": true
+                    },
+                    {
+                      "entity": "sensor.sun_next_dusk"
+                    }
+                  ],
+                  "state_color": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

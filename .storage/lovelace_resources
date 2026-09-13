@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "id": "46d98c9a399848c5af81576454e8a2af",
+        "url": "/hacsfiles/apexcharts-card/apexcharts-card.js?hacstag=331701152223",
+        "type": "module"
+      },
+      {
+        "id": "9e74e8beae864dba95289333cd902fd8",
+        "url": "/hacsfiles/bom-weather-card/bom-weather-card.js?hacstag=195497310114",
+        "type": "module"
+      },
+      {
+        "id": "374dc3d035344589a45c39d2ec4ef0e9",
+        "url": "/hacsfiles/button-card/button-card.js?hacstag=146194325701",
+        "type": "module"
+      },
+      {
+        "id": "a768cd9b6297424e91d9a60e1b97733f",
+        "url": "/hacsfiles/floor3d-card/floor3d-card.js?hacstag=361776538153",
+        "type": "module"
+      },
+      {
+        "id": "4570289760fb478f9c8b2cbfd5ef371e",
+        "url": "/hacsfiles/floor3dpro-card/floor3dpro-card.js?hacstag=113560790615321",
+        "type": "module"
+      },
+      {
+        "id": "7e0ec2b5d095450ba20da751915d88db",
+        "url": "/hacsfiles/ha-dockhand-cards/ha-dockhand-cards.js?hacstag=1298830892110",
+        "type": "module"
+      },
+      {
+        "id": "3e18085a568143acb7f039a92bf0141c",
+        "url": "/api/spot_scheduler/static/spot-scheduler-card.js?v=3787644d",
+        "type": "module"
+      }
+    ]
+  }
+}

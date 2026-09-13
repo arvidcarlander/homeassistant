@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.arvids_dashboard",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "type": "sections",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "nordpool spotpris",
+                  "heading_style": "title",
+                  "grid_options": {
+                    "columns": 9,
+                    "rows": "auto"
+                  }
+                },
+                {
+                  "type": "custom:apexcharts-card",
+                  "show": {
+                    "last_updated": true
+                  },
+                  "header": {
+                    "show": true,
+                    "show_states": false,
+                    "colorize_states": true
+                  },
+                  "now": {
+                    "show": false,
+                    "color": "black"
+                  },
+                  "all_series_config": {
+                    "type": "area",
+                    "stroke_width": 1,
+                    "curve": "smooth",
+                    "opacity": 0.09,
+                    "show": {
+                      "legend_value": false,
+                      "extremas": true
+                    }
+                  },
+                  "grid_options": {
+                    "columns": "full",
+                    "header": null,
+                    "show": true,
+                    "title": "Nord Pool SE3 – Future prices"
+                  },
+                  "graph_span": "48h",
+                  "span": {
+                    "start": "day"
+                  },
+                  "series": [
+                    {
+                      "entity": "sensor.nord_pool_se3_tomorrow",
+                      "name": "Today",
+                      "color": "magenta",
+                      "extend_to": false,
+                      "data_generator": "const now = Date.now();\nreturn entity.attributes.today_prices\n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
+                    },
+                    {
+                      "entity": "sensor.nord_pool_se3_tomorrow",
+                      "name": "Tomorrow",
+                      "color": "orange",
+                      "data_generator": "const now = Date.now();\nreturn entity.attributes.prices \n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
+                    }
+                  ],
+                  "apex_config": {
+                    "xaxis": {
+                      "type": "datetime",
+                      "tickAmount": 8,
+                      "labels": {
+                        "datetimeUTC": false,
+                        "formatter": "EVAL:function(value, timestamp) {\n  const d = new Date(timestamp);\n  return d.toLocaleTimeString([], {\n    hour: '2-digit',\n  \n    hour12: false\n  });\n}\n"
+                      }
+                    },
+                    "grid": {
+                      "xaxis": {
+                        "lines": {
+                          "show": true
+                        }
+                      }
+                    },
+                    "annotations": {
+                      "xaxis": [
+                        {
+                          "x": "EVAL:Date.now()",
+                          "borderColor": "blue",
+                          "strokeDashArray": 0,
+                          "borderWidth": 2,
+                          "label": {
+                            "text": "Now"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "column_span": 1,
+              "background": {
+                "color": "amber",
+                "opacity": 21
+              }
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Musik",
+                  "heading_style": "title"
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "show_state": true,
+                  "type": "glance",
+                  "entities": [
+                    {
+                      "entity": "switch.pump",
+                      "show_last_changed": false,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "show_state": false
+                    },
+                    {
+                      "entity": "cover.ute_vattenkran"
+                    },
+                    {
+                      "entity": "binary_sensor.arvidsphone_kiosk_mode"
+                    }
+                  ],
+                  "state_color": true
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "New section"
+                },
+                {
+                  "type": "custom:spot-scheduler-card",
+                  "grid_options": {
+                    "columns": "full"
+                  },
+                  "expensive_hours": 3,
+                  "show_price_labels": false,
+                  "label_width": 120,
+                  "layout": "desktop"
+                },
+                {
+                  "type": "heading",
+                  "heading": "SpotScheduler"
+                },
+                {
+                  "type": "tile",
+                  "entity": "number.spotscheduler_expensive_hours"
+                },
+                {
+                  "type": "tile",
+                  "entity": "number.spotscheduler_cheapest_hours"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.spotscheduler_expensive_hours_turn_off"
+                },
+                {
+                  "type": "tile",
+                  "entity": "switch.spotscheduler_cheapest_hours_auto_select"
+                },
+                {
+                  "type": "tile",
+                  "entity": "number.spotscheduler_min_price_limit"
+                },
+                {
+                  "type": "tile",
+                  "entity": "number.spotscheduler_max_price_limit"
+                }
+              ],
+              "column_span": 3,
+              "background": {
+                "color": "black",
+                "opacity": 50
+              }
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "New section"
+                },
+                {
+                  "type": "picture-elements",
+                  "elements": [
+                    {
+                      "type": "state-badge",
+                      "entity": "switch.shellyplusplugs_80646fd1c78c",
+                      "style": {
+                        "top": "25%",
+                        "left": "49%"
+                      },
+                      "tap_action": {
+                        "action": "toggle"
+                      }
+                    }
+                  ],
+                  "image": "https://demo.home-assistant.io/stub_config/floorplan.png"
+                },
+                {
+                  "type": "media-control",
+                  "entity": "media_player.living_room_living_room",
+                  "name": "Högtalare"
+                }
+              ]
+            }
+          ],
+          "footer": {}
+        }
+      ]
+    }
+  }
+}

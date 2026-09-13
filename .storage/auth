@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth",
+  "data": {
+    "users": [
+      {
+        "id": "5a2389ef9b7244c0a359ad0a4a634952",
+        "group_ids": [
+          "system-read-only"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Content",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "arvid",
+        "system_generated": false,
+        "local_only": false
+      }
+    ],
+    "groups": [
+      {
+        "id": "system-admin",
+        "name": "Administrators"
+      },
+      {
+        "id": "system-users",
+        "name": "Users"
+      },
+      {
+        "id": "system-read-only",
+        "name": "Read Only"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "a6086884f18244e5a0af1e4098d04fb8",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "arvid"
+        }
+      }
+    ],
+    "refresh_tokens": [
+      {
+        "id": "304029073c2941d1be04e05e7c26a4eb",
+        "user_id": "5a2389ef9b7244c0a359ad0a4a634952",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2026-07-31T10:25:27.069113+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "bbbf7160275a8993ed026a2717e979c46e4afcf782bebf99a7c5d76f659d8090fb94db870d5b7f54869921ef6050ad1f309145e14351fe388a182c0978f10882",
+        "jwt_key": "c7324a24b0511d6d64b7da8f995d5ed422a4e317884b2dea5c9c9332b2fe2dca700ab9bef7983c107db88e9c538bbcd462c37f4e9b3b707f1502005a5817d7eb",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2026.7.4"
+      },
+      {
+        "id": "414e96634f3d4648b3f2c6a52ba7dbaa",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://rhelserver.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-07-31T10:31:16.506437+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "5b48e0fcfa5b5e1f82300f5bba8427ddd91534dd2b2dd14d33a3815225fcb8c967b96d60027bd4d5d2d08769af31590e052d9e3d9557f4094b14494e43ad8a25",
+        "jwt_key": "f78ec859a42c5d7ede0cd53546ab257838f76d7f3e75ff624b8592a84993f9b77d67b4a43afd1ce5dc2e102d91143d2dc24caf64932c7f10f8c1c66211fb2c48",
+        "last_used_at": "2026-09-04T13:40:04.704650+00:00",
+        "last_used_ip": "192.168.3.117",
+        "expire_at": 1796305204.70465,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "0b10fca37d124364ae78cf19bd0c0a7c",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://rhelserver.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-07-31T13:12:16.205233+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "3d2cf05ff586ea8d9a18cd703ccd11800e30937f130a3d4e5809e81864d4d4c56f9d76af129825f5b629d88d5b78e199cdc8bf58d0db83cb6a507b537594bffb",
+        "jwt_key": "f8e64c52bf10d89cd8b25130f2bef64ebf37814d0fd56f955f8e7db9ce4cad6ebc00d408488066c7c984fb0441dc3a5dec367c64a5f1eb768e9c9f7021f1945d",
+        "last_used_at": "2026-08-05T12:05:00.926125+00:00",
+        "last_used_ip": "192.168.3.207",
+        "expire_at": 1793707500.926125,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "31c5e36f7ea9410ab609fa65c09f5e42",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "https://home-assistant.io/iOS",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-07-31T13:13:07.787500+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "fb1ebfa370370a90bd6ae6eba87053320224bcacca32e380c151c7a8e9e52d5bb669ba6233e40885e7eff407009aa445553efece0b8545d271b11951afca56c1",
+        "jwt_key": "ed8d6218206884e9a4a1495185586852b05dc2cad7ca92c9e02ac18e417c7f62d03a63d107a63b9419249a76a6a6c402b007a9cdb6bd71fccd0da27081b7cafd",
+        "last_used_at": "2026-09-13T12:01:57.448498+00:00",
+        "last_used_ip": "192.168.3.117",
+        "expire_at": 1797076917.448498,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "d071df187d214c3889b2fa7b0a4d0a41",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://www.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-07-31T13:57:33.856089+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "65d757798bf98536fbf4cfc6c124d659bca545dad9d5a37e1b15dfaab4d1e6ab9b187ef8d191d4ab7bd27c62bd7223d29f4b1000d1cf07652e7aa61dd97601be",
+        "jwt_key": "47736ff15136e318da90e00511f50bb71e19bd939b40e9a4baac8b06e0dc8945f410a0dcd20633cd6dcf1c3f39c0e1bcd7373368f169d50724312501b95471b1",
+        "last_used_at": "2026-09-06T10:07:18.714743+00:00",
+        "last_used_ip": "192.168.3.117",
+        "expire_at": 1796465238.714743,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "02e55b03f401464e90b6a6919b5ae294",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://www.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-08-04T21:42:05.011194+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "949f9aec78960fc13762f63066f01cfb5aa37352cbcebce757579c7ceea5f2d5aa5aebebd88106df82392b0d0b5f99924b5e5b7b612564cb6aabb0b2d531a816",
+        "jwt_key": "187df1a9b6bb5df72edfaad3d364a40beff0e515d11a7589e82c73719feb61c132351024a3c052191f458a8e91e36e59eacfa3ca4f52a408860a8c031ae7270d",
+        "last_used_at": "2026-09-13T12:18:42.789500+00:00",
+        "last_used_ip": "192.168.0.10",
+        "expire_at": 1797077922.7895,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "8ee01e7246d34288a72699fd6841f839",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://www.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-08-05T18:11:00.936364+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "1b8f56d93b0013da798bd1d148fed69b188138f105b59ef2a435b3e9940c817782ee61612fcb96a5692280febbe5ccfbd9c2b3a54c227d7486a77b5e08071927",
+        "jwt_key": "2408223fe4ae508ce2080d4527a19da035bea7033204d504af664df3b533838b4d0f39dea3106a02f9452261d53ec27e2df62128d88f24ba3d30702247e212da",
+        "last_used_at": "2026-09-09T19:21:56.948994+00:00",
+        "last_used_ip": "192.168.3.117",
+        "expire_at": 1796757716.948994,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "22ce3bcf70444ba0a5887b7e342176e4",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://www.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-08-15T12:50:27.893398+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "42b0514152b582644dab777e368009a79fdbb3ef0510f3829e360020d48f39446e96a88feb01ccb7e6d20487c6ea5b31aac42062d9a4bfab8d2b55fe36b7e110",
+        "jwt_key": "1e8b58c2c0283e766a140b269b3d065ddaf406f58a6ba3b6a0283e60bd3144eba317922a23820eba0c4aba05a1a9d8ab178bd2e2a837ef5a4df2ec33185c1239",
+        "last_used_at": "2026-09-08T18:57:44.775035+00:00",
+        "last_used_ip": "192.168.3.103",
+        "expire_at": 1796669864.775035,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "f75e5d7c6c9745e3b703b777781efa10",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "https://home-assistant.io/iOS",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-08-15T12:51:25.107744+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "3d8bfcce218dc6005415a3ec6e497469d1dbc589391bd11942c0d847df433da62db16dc6cd78c80dfbca336af2ee0710878a06e1fa84f922a4ad71eb5559cf26",
+        "jwt_key": "4e4354f898183e74db79e6749e27dc0d312aece2a758e9745894fdd029e6fe98d05925189589be66d92b64cf6ce10e1dab242072f97e6876051f598dd5286234",
+        "last_used_at": "2026-09-12T21:22:30.271782+00:00",
+        "last_used_ip": "192.168.3.103",
+        "expire_at": 1797024150.271782,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      },
+      {
+        "id": "b7bf70a17c30456d9a635903c5573d65",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "client_id": "http://rhelserver.thefarm:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2026-09-11T13:42:23.680889+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "19d00f3e1a868c7ce749ff5bbc16cb3a7689a256ad06f64003416fb78c185bf85df205b951bd0d7451cceb0075a860aae8a09fd49274f8e08fa06616e6b7c375",
+        "jwt_key": "7455ac21c9d513c1abed82a245b62f121dccacb5204a0be0f14eecd3bfa00cb9a189dd4db8ee0e60aacc52ddb95a99bb03e5a8098a52df338f6f375c23301e82",
+        "last_used_at": "2026-09-11T13:42:23.680937+00:00",
+        "last_used_ip": "192.168.0.10",
+        "expire_at": 1796910143.680937,
+        "credential_id": "a6086884f18244e5a0af1e4098d04fb8",
+        "version": "2026.7.4"
+      }
+    ]
+  }
+}

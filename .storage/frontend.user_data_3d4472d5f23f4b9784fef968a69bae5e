@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "frontend.user_data_3d4472d5f23f4b9784fef968a69bae5e",
+  "data": {
+    "core": {
+      "apps_info_dismissed": true,
+      "default_panel": "arvids-dashboard",
+      "showEntityIdPicker": true
+    },
+    "theme": {}
+  }
+}
