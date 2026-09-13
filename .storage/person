@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "arvid",
+        "name": "arvid",
+        "user_id": "3d4472d5f23f4b9784fef968a69bae5e",
+        "device_trackers": [
+          "device_tracker.arvidsphone",
+          "device_tracker.arvidsphoneold"
+        ]
+      }
+    ]
+  }
+}

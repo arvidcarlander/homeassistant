@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.floor_registry",
+  "data": {
+    "floors": [
+      {
+        "aliases": [],
+        "floor_id": "tegel_overvaning",
+        "icon": null,
+        "level": 1,
+        "name": "Tegel övervåning",
+        "created_at": "2026-07-31T10:51:14.577698+00:00",
+        "modified_at": "2026-07-31T10:51:14.577706+00:00"
+      }
+    ]
+  }
+}

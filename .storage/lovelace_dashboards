@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_dashboards",
+  "data": {
+    "items": [
+      {
+        "id": "map",
+        "icon": "mdi:map",
+        "title": "Map",
+        "url_path": "map",
+        "mode": "storage",
+        "show_in_sidebar": true,
+        "require_admin": false
+      },
+      {
+        "id": "arvids_dashboard",
+        "show_in_sidebar": true,
+        "title": "Arvids dashboard ",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "arvids-dashboard"
+      },
+      {
+        "id": "liten kiosk",
+        "show_in_sidebar": true,
+        "title": "liten kiosk",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "liten-kiosk"
+      }
+    ]
+  }
+}

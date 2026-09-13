@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "minor_version": 9,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "living_room",
+        "labels": [],
+        "name": "Living Room",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-07-31T10:25:32.731504+00:00",
+        "modified_at": "2026-07-31T10:25:32.731511+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "tegel_overvaning",
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "arvids_kontor",
+        "labels": [],
+        "name": "Arvids kontor",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-07-31T10:51:20.676067+00:00",
+        "modified_at": "2026-07-31T10:51:20.676070+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "elleverans_och_produktion",
+        "labels": [],
+        "name": "Elleverans och produktion",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-07-31T10:59:34.034353+00:00",
+        "modified_at": "2026-07-31T10:59:34.034360+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "hacs",
+        "labels": [],
+        "name": "HACS",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-07-31T13:00:15.834476+00:00",
+        "modified_at": "2026-07-31T13:00:15.834483+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "weather",
+        "labels": [],
+        "name": "Weather",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-08-21T19:52:19.923503+00:00",
+        "modified_at": "2026-08-21T19:52:19.923507+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "ladugarden",
+        "labels": [],
+        "name": "Ladugården",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-09-02T20:24:23.203387+00:00",
+        "modified_at": "2026-09-02T20:24:23.203393+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "ute",
+        "labels": [],
+        "name": "Ute",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-09-10T22:49:57.191102+00:00",
+        "modified_at": "2026-09-10T22:49:57.191109+00:00"
+      }
+    ]
+  }
+}
