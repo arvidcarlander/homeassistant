@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "minor_version": 7,
+  "key": "backup",
+  "data": {
+    "backups": [
+      {
+        "backup_id": "9cb8853c",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      },
+      {
+        "backup_id": "c5e827f7",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      }
+    ],
+    "config": {
+      "agents": {},
+      "automatic_backups_configured": true,
+      "create_backup": {
+        "agent_ids": [
+          "backup.local"
+        ],
+        "include_addons": null,
+        "include_all_addons": false,
+        "include_database": true,
+        "include_folders": null,
+        "name": null,
+        "password": "KK7H-8RXB-0BJB-CRWO-UAEY-36CW-SIZM"
+      },
+      "last_attempted_automatic_backup": "2026-09-14T05:23:58.002339+02:00",
+      "last_completed_automatic_backup": "2026-09-14T05:25:27.383601+02:00",
+      "retention": {
+        "copies": 3,
+        "days": null
+      },
+      "schedule": {
+        "days": [],
+        "recurrence": "daily",
+        "time": null
+      }
+    }
+  }
+}

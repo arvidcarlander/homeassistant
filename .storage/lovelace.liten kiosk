@@ -16,6 +16,7 @@
                   "heading": "New section"
                 },
                 {
+                  "color": "state",
                   "show_name": true,
                   "show_icon": true,
                   "show_state": true,
@@ -34,10 +35,14 @@
                       "show_state": true
                     },
                     {
-                      "entity": "sensor.sun_next_dusk"
+                      "entity": "sensor.nord_pool_se2_current_price",
+                      "show_state": true,
+                      "color": "red",
+                      "name": "Spot now",
+                      "icon": "mdi:power-plug",
+                      "show_last_changed": false
                     }
-                  ],
-                  "state_color": true
+                  ]
                 }
               ]
             }

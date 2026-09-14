@@ -48,7 +48,7 @@
                     "columns": "full",
                     "header": null,
                     "show": true,
-                    "title": "Nord Pool SE3 – Future prices"
+                    "title": "Nord Pool SE2 – Future prices"
                   },
                   "graph_span": "48h",
                   "span": {
@@ -56,14 +56,14 @@
                   },
                   "series": [
                     {
-                      "entity": "sensor.nord_pool_se3_tomorrow",
+                      "entity": "sensor.nord_pool_se2_tomorrow",
                       "name": "Today",
                       "color": "magenta",
                       "extend_to": false,
                       "data_generator": "const now = Date.now();\nreturn entity.attributes.today_prices\n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
                     },
                     {
-                      "entity": "sensor.nord_pool_se3_tomorrow",
+                      "entity": "sensor.nord_pool_se2_tomorrow",
                       "name": "Tomorrow",
                       "color": "orange",
                       "data_generator": "const now = Date.now();\nreturn entity.attributes.prices \n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
@@ -91,10 +91,7 @@
                           "x": "EVAL:Date.now()",
                           "borderColor": "blue",
                           "strokeDashArray": 0,
-                          "borderWidth": 2,
-                          "label": {
-                            "text": "Now"
-                          }
+                          "borderWidth": 2
                         }
                       ]
                     }

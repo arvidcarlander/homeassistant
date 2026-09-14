@@ -7,12 +7,12 @@
       {
         "extended_dict": {
           "last_step": "action/1",
-          "run_id": "4cb6a9361fccbb0e403b1d43a792336a",
+          "run_id": "d9cdd1f8110dc9fdc7c4a8e6a9ff5358",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2026-09-11T21:50:00.361626+00:00",
-            "finish": "2026-09-11T21:50:01.388054+00:00"
+            "start": "2026-09-13T21:50:00.419527+00:00",
+            "finish": "2026-09-13T21:50:00.990646+00:00"
           },
           "domain": "automation",
           "item_id": "1788126644614",
@@ -21,23 +21,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2026-09-11T21:50:00.361786+00:00",
+                "timestamp": "2026-09-13T21:50:00.419631+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.new_automation",
                     "state": "on",
                     "attributes": {
                       "id": "1788126644614",
-                      "last_triggered": "2026-09-10T21:50:00.124700+00:00",
+                      "last_triggered": "2026-09-12T21:50:00.318107+00:00",
                       "mode": "single",
                       "current": 0,
                       "friendly_name": "automation 0"
                     },
-                    "last_changed": "2026-09-10T23:24:23.766089+00:00",
-                    "last_reported": "2026-09-10T23:24:23.766089+00:00",
-                    "last_updated": "2026-09-10T23:24:23.766089+00:00",
+                    "last_changed": "2026-09-13T21:18:20.313998+00:00",
+                    "last_reported": "2026-09-13T21:18:20.313998+00:00",
+                    "last_updated": "2026-09-13T21:18:20.313998+00:00",
                     "context": {
-                      "id": "01M26T5YTP9AHWVT626E0C66FN",
+                      "id": "01M2EA59MS3V7589Z8GEAWBHJ3",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -47,7 +47,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time",
-                    "now": "2026-09-11T23:50:00.361257+02:00",
+                    "now": "2026-09-13T23:50:00.419189+02:00",
                     "description": "time",
                     "entity_id": null
                   }
@@ -57,10 +57,10 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2026-09-11T21:50:00.362224+00:00",
+                "timestamp": "2026-09-13T21:50:00.420118+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01M2975V59ENDFPADVP7F7KW5K",
+                    "id": "01M2EBZ973XD4CZYBGGRQ74K4A",
                     "parent_id": null,
                     "user_id": null
                   },
@@ -566,7 +566,7 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2026-09-11T21:50:01.386235+00:00",
+                "timestamp": "2026-09-13T21:50:00.980651+00:00",
                 "result": {
                   "params": {
                     "domain": "persistent_notification",
@@ -1097,19 +1097,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01M2975V59ENDFPADVP7F7KW5K",
+            "id": "01M2EBZ973XD4CZYBGGRQ74K4A",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/1",
-          "run_id": "4cb6a9361fccbb0e403b1d43a792336a",
+          "run_id": "d9cdd1f8110dc9fdc7c4a8e6a9ff5358",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2026-09-11T21:50:00.361626+00:00",
-            "finish": "2026-09-11T21:50:01.388054+00:00"
+            "start": "2026-09-13T21:50:00.419527+00:00",
+            "finish": "2026-09-13T21:50:00.990646+00:00"
           },
           "domain": "automation",
           "item_id": "1788126644614",
