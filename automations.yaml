@@ -16,3 +16,30 @@
       title: Nord Pool test
       message: '{{ nordpool_prices }}'
   mode: single
+- id: '1789560440549'
+  alias: ttt
+  description: ''
+  triggers: []
+  conditions: []
+  actions:
+  - action: notify.send_message
+    metadata: {}
+    target:
+      device_id: f54ede4a8f5e53134f485bbcd427afd2
+    data:
+      message: kiosk_show_screensaver
+  mode: single
+- id: '1789560624523'
+  alias: Increase brightness kiosk
+  description: ''
+  triggers: []
+  conditions: []
+  actions:
+  - action: notify.send_message
+    metadata: {}
+    target:
+      device_id: f54ede4a8f5e53134f485bbcd427afd2
+    data:
+      message: kiosk_set_brightness
+      level: 0.5
+  mode: single
