@@ -12,3 +12,4 @@ core.config_entries
 auth
 backups/
 custom_icons/*.zip
+.storage/auth
