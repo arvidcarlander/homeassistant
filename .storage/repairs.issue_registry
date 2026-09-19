@@ -31,6 +31,100 @@
         "domain": "hacs",
         "is_persistent": false,
         "issue_id": "restart_required_1288406891_tags/v2.1.0"
+      },
+      {
+        "created": "2026-09-13T21:17:36.903460+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_1288406891_tags/v2.2.0"
+      },
+      {
+        "created": "2026-09-13T21:17:36.931163+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_300358676_tags/7.1.27"
+      },
+      {
+        "created": "2026-09-19T09:44:12.519157+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-19T09:44:12.485581+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-19T09:44:12.485581+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: unexpected character: line 211 column 13 (char 6969)"
+        }
+      },
+      {
+        "created": "2026-09-19T09:46:03.239313+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-19T09:46:03.231467+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-19T09:46:03.231467+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: unexpected character: line 226 column 30 (char 7456)"
+        }
+      },
+      {
+        "created": "2026-09-19T09:58:13.232990+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-19T09:58:13.203837+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-19T09:58:13.203837+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: unexpected character: line 213 column 29 (char 7093)"
+        }
+      },
+      {
+        "created": "2026-09-19T10:41:44.787238+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-19T10:41:44.785271+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-19T10:41:44.785271+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: unexpected character: line 243 column 15 (char 8190)"
+        }
       }
     ]
   }

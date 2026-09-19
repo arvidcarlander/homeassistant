@@ -48,7 +48,7 @@
                     "columns": "full",
                     "header": null,
                     "show": true,
-                    "title": "Nord Pool SE3 – Future prices"
+                    "title": "Nord Pool SE2 – Future prices"
                   },
                   "graph_span": "48h",
                   "span": {
@@ -56,14 +56,14 @@
                   },
                   "series": [
                     {
-                      "entity": "sensor.nord_pool_se3_tomorrow",
+                      "entity": "sensor.nord_pool_se2_tomorrow",
                       "name": "Today",
                       "color": "magenta",
                       "extend_to": false,
                       "data_generator": "const now = Date.now();\nreturn entity.attributes.today_prices\n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
                     },
                     {
-                      "entity": "sensor.nord_pool_se3_tomorrow",
+                      "entity": "sensor.nord_pool_se2_tomorrow",
                       "name": "Tomorrow",
                       "color": "orange",
                       "data_generator": "const now = Date.now();\nreturn entity.attributes.prices \n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
@@ -91,10 +91,7 @@
                           "x": "EVAL:Date.now()",
                           "borderColor": "blue",
                           "strokeDashArray": 0,
-                          "borderWidth": 2,
-                          "label": {
-                            "text": "Now"
-                          }
+                          "borderWidth": 2
                         }
                       ]
                     }
@@ -116,9 +113,10 @@
                   "heading_style": "title"
                 },
                 {
-                  "show_name": false,
+                  "show_name": true,
                   "show_icon": true,
                   "show_state": true,
+                  "color": "state",
                   "type": "glance",
                   "entities": [
                     {
@@ -131,12 +129,8 @@
                     },
                     {
                       "entity": "cover.ute_vattenkran"
-                    },
-                    {
-                      "entity": "binary_sensor.arvidsphone_kiosk_mode"
                     }
-                  ],
-                  "state_color": true
+                  ]
                 }
               ]
             },
@@ -220,6 +214,92 @@
                   "type": "media-control",
                   "entity": "media_player.living_room_living_room",
                   "name": "Högtalare"
+                },
+                {
+                  "type": "custom:wall-clock-card",
+                  "layout": {
+                    "zones": {
+                      "center": {
+                        "widgets": [
+                          {
+                            "type": "clock",
+                            "id": "clock"
+                          },
+                          {
+                            "type": "date",
+                            "id": "date"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "appearance": {
+                    "fontColor": "#79c4ff",
+                    "size": "small",
+                    "fontWeight": 500,
+                    "contentScale": 50
+                  },
+                  "background": {
+                    "objectFit": "contain"
+                  },
+                  "grid_options": {
+                    "rows": "auto"
+                  }
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "light.stora_gardslampan"
+                    },
+                    {
+                      "entity": "sensor.backup_next_scheduled_automatic_backup"
+                    },
+                    {
+                      "entity": "sensor.backup_last_successful_automatic_backup"
+                    }
+                  ],
+                  "show_header_toggle": true,
+                  "header": {
+                    "type": "buttons",
+                    "entities": []
+                  }
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "entity-filter",
+                      "entities": [
+                        "sensor.backup_backup_manager_state",
+                        "sensor.backup_last_attempted_automatic_backup",
+                        "light.stora_utelampor"
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "state",
+                          "state": "idle"
+                        }
+                      ],
+                      "card": {
+                        "type": "entities"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "column_span": 3
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "arvidsphone"
+                },
+                {
+                  "type": "tile",
+                  "entity": "notify.arvidsphone"
                 }
               ]
             }
