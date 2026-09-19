@@ -13,7 +13,7 @@
               "cards": [
                 {
                   "type": "heading",
-                  "heading": "New section"
+                  "heading_style": "title"
                 },
                 {
                   "type": "custom:apexcharts-card",
@@ -98,9 +98,8 @@
                   "clock_size": "medium",
                   "show_seconds": false,
                   "no_background": false,
-                  "border": false,
+                  "border": true,
                   "ticks": "hour",
-                  "face_style": "markers",
                   "date_format": [
                     "year-numeric",
                     "separator-dash",
@@ -110,7 +109,8 @@
                   ],
                   "grid_options": {
                     "rows": "auto"
-                  }
+                  },
+                  "face_style": "markers"
                 },
                 {
                   "show_name": false,
@@ -138,9 +138,9 @@
                       }
                     },
                     {
-                      "entity": "switch.tegel_kok_tak",
+                      "entity": "switch.tegel_kok_tak_2",
                       "show_state": true,
-                      "icon": "fa6-regular:lightbulb",
+                      "icon": "",
                       "show_last_changed": false,
                       "hold_action": {
                         "action": "toggle"
@@ -203,7 +203,13 @@
                     "next",
                     "previous"
                   ],
-                  "collapsible_controls": true
+                  "collapsible_controls": true,
+                  "visibility": [
+                    {
+                      "condition": "state",
+                      "state_not": "idle"
+                    }
+                  ]
                 },
                 {
                   "type": "tile",

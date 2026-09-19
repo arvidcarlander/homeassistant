@@ -24,10 +24,10 @@
   actions:
   - action: notify.send_message
     metadata: {}
-    target:
-      device_id: f54ede4a8f5e53134f485bbcd427afd2
     data:
       message: kiosk_show_screensaver
+    target:
+      entity_id: notify.arvidsphoneold
   mode: single
 - id: '1789560624523'
   alias: Increase brightness kiosk

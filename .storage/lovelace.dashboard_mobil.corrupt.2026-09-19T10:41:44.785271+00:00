@@ -102,70 +102,6 @@
                   "title": "Belysning "
                 },
                 {
-                  "type": "heading",
-                  "heading": "AVSTÄNGDA  (normalt på)",
-                  "heading_style": "title"
-                },
-                {
-                  "type": "custom:auto-entities",
-                  "filter": {
-                    "include": [
-                      {
-                        "label": "warn_when_off",
-                        "state": "/^(off|closed)$/"
-                      }
-                    ]
-                  },
-                  "card": {
-                    "type": "entities",
-                    "card_mod": {
-                      "style": {
-                        "hui-generic-entity-row": {
-                          "$": {
-                            "state-badge": {
-                              "$": "ha-icon { color: red !important; }"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "grid_options": {
-                    "columns": 9,
-                    "rows": "auto"
-                  }
-                },
-                {
-                  "type": "heading",
-                  "heading": "PÅ (normalt avstängda)",
-                  "heading_style": "title"
-                },
-                {
-                  "type": "custom:auto-entities",
-                  "filter": {
-                    "include": [
-                      {
-                        "label": "warn-if-on",
-                        "state": "/^(on|open|opening|closing)$/"
-                      }
-                    ]
-                  },
-                  "card": {
-                    "type": "entities",
-                    "card_mod": {
-                      "style": {
-                        "hui-generic-entity-row": {
-                          "$": {
-                            "state-badge": {
-                              "$": "ha-icon { color: yellow !important; }"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                {
                   "type": "statistics-graph",
                   "entities": [
                     {
@@ -213,21 +149,6 @@
                   }
                 },
                 {
-                  "show_name": false,
-                  "show_icon": true,
-                  "type": "button",
-                  "name": "Starta om Home Assistant",
-                  "icon": "mdi:restart",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "homeassistant.restart"
-                  },
-                  "grid_options": {
-                    "columns": 3,
-                    "rows": 2
-                  }
-                },
-                {
                   "type": "custom:mushroom-media-player-card",
                   "entity": "media_player.living_room_living_room",
                   "use_media_info": false,
@@ -247,6 +168,12 @@
                       "state_not": "idle"
                     }
                   ]
+                },
+                {
+                  "type": "tile",
+                  "entity": "media_player.living_room_living_room",
+                  "vertical": false,
+                  "features_position": "bottom"
                 }
               ],
               "column_span": 1
@@ -278,7 +205,41 @@
                   "card": {
                     "type": "entities"
                   }
-                }
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "entity-filter",
+                      "entities": [
+                        "cover.ute_vattenkran"
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "state",
+                          "state_not": "closed"
+                        }
+                      ],
+                      "card_mod": {
+                        "style": "ha-card { border: none; box-shadow: none; background: transparent; }"
+                      }
+                    },
+                    {
+                      "type": "entity-filter",
+                      "entities": [
+                        "switch.pump"
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "state",
+                          "state_not": "off"
+                        }
+                      ],
+                      "card_mod": {
+                        "style": "ha-card { border: none; box-shadow: none; background: transparent; }"
+                      }
+                    }
+                  ]
               ]
             }
           ]

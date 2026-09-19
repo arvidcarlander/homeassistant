@@ -129,11 +129,6 @@
                     },
                     {
                       "entity": "cover.ute_vattenkran"
-                    },
-                    {
-                      "entity": "binary_sensor.arvidsphone_kiosk_screensaver",
-                      "icon": "svg-spinners:pulse-rings-multiple",
-                      "name": "Kiosk"
                     }
                   ]
                 }

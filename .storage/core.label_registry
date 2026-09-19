@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.label_registry",
+  "data": {
+    "labels": [
+      {
+        "color": null,
+        "description": null,
+        "icon": null,
+        "label_id": "warn_if_on",
+        "name": "warn-if-on",
+        "created_at": "2026-09-19T14:56:10.450438+00:00",
+        "modified_at": "2026-09-19T14:56:10.450441+00:00"
+      },
+      {
+        "color": null,
+        "description": null,
+        "icon": null,
+        "label_id": "warn_when_off",
+        "name": "warn-when-off",
+        "created_at": "2026-09-19T15:14:44.793628+00:00",
+        "modified_at": "2026-09-19T15:14:44.793634+00:00"
+      },
+      {
+        "color": null,
+        "description": null,
+        "icon": null,
+        "label_id": "warn_if_off",
+        "name": "warn-if-off",
+        "created_at": "2026-09-19T15:16:10.449804+00:00",
+        "modified_at": "2026-09-19T15:16:10.449811+00:00"
+      }
+    ]
+  }
+}
