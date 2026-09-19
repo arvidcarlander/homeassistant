@@ -5,7 +5,7 @@
   "data": {
     "core": {
       "apps_info_dismissed": true,
-      "default_panel": "arvids-dashboard",
+      "default_panel": "liten-kiosk",
       "showEntityIdPicker": true
     },
     "theme": {}

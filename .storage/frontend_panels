@@ -5,6 +5,12 @@
   "data": {
     "home": {
       "show_in_sidebar": true
+    },
+    "light": {
+      "show_in_sidebar": true
+    },
+    "maintenance": {
+      "show_in_sidebar": true
     }
   }
 }

@@ -10,3 +10,5 @@ home-assistant_v2.db-wal
 .cache
 core.config_entries
 auth
+backups/
+custom_icons/*.zip

@@ -38,6 +38,26 @@
         "id": "3e18085a568143acb7f039a92bf0141c",
         "url": "/api/spot_scheduler/static/spot-scheduler-card.js?v=3787644d",
         "type": "module"
+      },
+      {
+        "id": "b66797f4bd244863bb8f32544fd6ce91",
+        "url": "/hacsfiles/ha-wall-clock-card/wall-clock-card.js?hacstag=10141155223162",
+        "type": "module"
+      },
+      {
+        "id": "04cfc9ccf9e04eaa894b6487d686598c",
+        "url": "/hacsfiles/lovelace-mushroom/mushroom.js?hacstag=444350375523",
+        "type": "module"
+      },
+      {
+        "id": "39541b394cbc43ddb80d5688517fd9b7",
+        "url": "/hacsfiles/lovelace-auto-entities/auto-entities.js?hacstag=1677445841161",
+        "type": "module"
+      },
+      {
+        "id": "c72a5a4189894725b59f6c02cad4f4a4",
+        "url": "/hacsfiles/lovelace-card-mod/card-mod.js?hacstag=190927524421",
+        "type": "module"
       }
     ]
   }
