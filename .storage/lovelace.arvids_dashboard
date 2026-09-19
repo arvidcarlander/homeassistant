@@ -78,6 +78,9 @@
                         "formatter": "EVAL:function(value, timestamp) {\n  const d = new Date(timestamp);\n  return d.toLocaleTimeString([], {\n    hour: '2-digit',\n  \n    hour12: false\n  });\n}\n"
                       }
                     },
+                    "yaxis": {
+                      "min": 2.0
+                    },
                     "grid": {
                       "xaxis": {
                         "lines": {
