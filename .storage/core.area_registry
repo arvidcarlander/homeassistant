@@ -94,6 +94,19 @@
         "temperature_entity_id": null,
         "created_at": "2026-09-10T22:49:57.191102+00:00",
         "modified_at": "2026-09-10T22:49:57.191109+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "tiundaland",
+        "labels": [],
+        "name": "Tiundaland",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2026-09-19T19:06:22.010918+00:00",
+        "modified_at": "2026-09-19T19:06:22.010925+00:00"
       }
     ]
   }

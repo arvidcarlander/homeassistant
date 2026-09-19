@@ -53,14 +53,14 @@
                       }
                     },
                     {
-                      "entity": "light.vinterhagen",
+                      "entity": "light.vinterhagenel",
                       "hold_action": {
                         "action": "toggle"
                       },
                       "icon": "mdi:fence-electric"
                     },
                     {
-                      "entity": "switch.vita_hall_tak",
+                      "entity": "light.vita_hall_tak",
                       "hold_action": {
                         "action": "toggle"
                       },
@@ -111,24 +111,14 @@
                   "filter": {
                     "include": [
                       {
+                        "options": {},
                         "label": "warn_when_off",
                         "state": "/^(off|closed)$/"
                       }
                     ]
                   },
                   "card": {
-                    "type": "entities",
-                    "card_mod": {
-                      "style": {
-                        "hui-generic-entity-row": {
-                          "$": {
-                            "state-badge": {
-                              "$": "ha-icon { color: red !important; }"
-                            }
-                          }
-                        }
-                      }
-                    }
+                    "type": "entities"
                   },
                   "grid_options": {
                     "columns": 9,
@@ -145,7 +135,8 @@
                   "filter": {
                     "include": [
                       {
-                        "label": "warn-if-on",
+                        "options": {},
+                        "label": "warn_if_on",
                         "state": "/^(on|open|opening|closing)$/"
                       }
                     ]
@@ -164,32 +155,6 @@
                       }
                     }
                   }
-                },
-                {
-                  "type": "statistics-graph",
-                  "entities": [
-                    {
-                      "entity": "sensor.p1ib_active_power_plus_q1_q4",
-                      "name": "Köpt från nätet",
-                      "color": "red"
-                    },
-                    {
-                      "entity": "sensor.p1ib_active_power_minus_q2_q3",
-                      "name": "Sålt till nätet",
-                      "color": "green"
-                    }
-                  ],
-                  "days_to_show": 20,
-                  "period": "day",
-                  "chart_type": "line",
-                  "stat_types": [
-                    "mean",
-                    "min"
-                  ],
-                  "hide_legend": false,
-                  "expand_legend": true,
-                  "logarithmic_scale": false,
-                  "energy_date_selection": false
                 },
                 {
                   "type": "clock",
@@ -247,6 +212,32 @@
                       "state_not": "idle"
                     }
                   ]
+                },
+                {
+                  "type": "statistics-graph",
+                  "entities": [
+                    {
+                      "entity": "sensor.p1ib_active_power_plus_q1_q4",
+                      "name": "Köpt från nätet",
+                      "color": "red"
+                    },
+                    {
+                      "entity": "sensor.p1ib_active_power_minus_q2_q3",
+                      "name": "Sålt till nätet",
+                      "color": "green"
+                    }
+                  ],
+                  "days_to_show": 20,
+                  "period": "day",
+                  "chart_type": "line",
+                  "stat_types": [
+                    "mean",
+                    "min"
+                  ],
+                  "hide_legend": false,
+                  "expand_legend": true,
+                  "logarithmic_scale": false,
+                  "energy_date_selection": false
                 }
               ],
               "column_span": 1
@@ -264,19 +255,29 @@
                   "heading": "Tända lampor"
                 },
                 {
-                  "type": "entity-filter",
-                  "entities": [
-                    "switch.vita_hall_tak",
-                    "light.test"
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "state",
-                      "state": "on"
-                    }
-                  ],
+                  "type": "custom:auto-entities",
+                  "filter": {
+                    "include": [
+                      {
+                        "options": {},
+                        "state": "/^(on|open|opening|closing)$/",
+                        "domain": "light"
+                      }
+                    ]
+                  },
                   "card": {
-                    "type": "entities"
+                    "type": "entities",
+                    "card_mod": {
+                      "style": {
+                        "hui-generic-entity-row": {
+                          "$": {
+                            "state-badge": {
+                              "$": "ha-icon { color: yellow !important; }"
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               ]
