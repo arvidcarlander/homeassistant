@@ -5,19 +5,19 @@
   "data": {
     "backups": [
       {
-        "backup_id": "f967c02f",
+        "backup_id": "20f9f569",
         "failed_addons": [],
         "failed_agent_ids": [],
         "failed_folders": []
       },
       {
-        "backup_id": "574f4cf0",
+        "backup_id": "46e8675d",
         "failed_addons": [],
         "failed_agent_ids": [],
         "failed_folders": []
       },
       {
-        "backup_id": "975b54fd",
+        "backup_id": "16776bd6",
         "failed_addons": [],
         "failed_agent_ids": [],
         "failed_folders": []
@@ -37,8 +37,8 @@
         "name": null,
         "password": "KK7H-8RXB-0BJB-CRWO-UAEY-36CW-SIZM"
       },
-      "last_attempted_automatic_backup": "2026-09-19T05:01:25.001407+02:00",
-      "last_completed_automatic_backup": "2026-09-19T05:02:48.590545+02:00",
+      "last_attempted_automatic_backup": "2026-09-22T04:50:10.002405+02:00",
+      "last_completed_automatic_backup": "2026-09-22T04:51:23.106047+02:00",
       "retention": {
         "copies": 3,
         "days": null

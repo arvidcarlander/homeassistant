@@ -32,6 +32,13 @@
             "should_expose": false
           }
         }
+      },
+      "button.vattenkran_dn_c": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          }
+        }
       }
     }
   }

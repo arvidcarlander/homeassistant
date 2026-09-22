@@ -12,10 +12,6 @@
               "type": "grid",
               "cards": [
                 {
-                  "type": "heading",
-                  "heading": "New section"
-                },
-                {
                   "show_name": true,
                   "show_icon": true,
                   "show_state": true,
@@ -67,7 +63,6 @@
                       "icon": "mdi:dome-light"
                     }
                   ],
-                  "title": "Favoriter",
                   "grid_options": {
                     "rows": 3,
                     "columns": 12
@@ -98,32 +93,7 @@
                         "action": "toggle"
                       }
                     }
-                  ],
-                  "title": "Belysning "
-                },
-                {
-                  "type": "heading",
-                  "heading": "AVSTÄNGDA  (normalt på)",
-                  "heading_style": "title"
-                },
-                {
-                  "type": "custom:auto-entities",
-                  "filter": {
-                    "include": [
-                      {
-                        "options": {},
-                        "label": "warn_when_off",
-                        "state": "/^(off|closed)$/"
-                      }
-                    ]
-                  },
-                  "card": {
-                    "type": "entities"
-                  },
-                  "grid_options": {
-                    "columns": 9,
-                    "rows": "auto"
-                  }
+                  ]
                 },
                 {
                   "type": "heading",
@@ -159,7 +129,7 @@
                 {
                   "type": "clock",
                   "clock_style": "analog",
-                  "clock_size": "small",
+                  "clock_size": "medium",
                   "show_seconds": false,
                   "no_background": false,
                   "border": false,
@@ -173,24 +143,39 @@
                     "day-2-digit"
                   ],
                   "grid_options": {
-                    "rows": "auto",
-                    "columns": 3
+                    "columns": 6,
+                    "rows": 3
                   }
                 },
                 {
-                  "show_name": false,
-                  "show_icon": true,
-                  "type": "button",
-                  "name": "Starta om Home Assistant",
-                  "icon": "mdi:restart",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "homeassistant.restart"
-                  },
+                  "type": "statistics-graph",
                   "grid_options": {
-                    "columns": 3,
-                    "rows": 2
-                  }
+                    "columns": 6,
+                    "rows": 3
+                  },
+                  "entities": [
+                    {
+                      "entity": "sensor.p1ib_active_power_plus_q1_q4",
+                      "name": "Köpt från nätet",
+                      "color": "red"
+                    },
+                    {
+                      "entity": "sensor.p1ib_active_power_minus_q2_q3",
+                      "name": "Sålt till nätet",
+                      "color": "green"
+                    }
+                  ],
+                  "days_to_show": 20,
+                  "period": "day",
+                  "chart_type": "line",
+                  "stat_types": [
+                    "mean",
+                    "min"
+                  ],
+                  "hide_legend": true,
+                  "expand_legend": true,
+                  "logarithmic_scale": false,
+                  "energy_date_selection": false
                 },
                 {
                   "type": "custom:mushroom-media-player-card",
@@ -214,30 +199,124 @@
                   ]
                 },
                 {
-                  "type": "statistics-graph",
-                  "entities": [
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "name": "Starta om Home Assistant",
+                  "icon": "mdi:restart",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "homeassistant.restart"
+                  },
+                  "grid_options": {
+                    "columns": 2,
+                    "rows": 1
+                  },
+                  "icon_height": "40px"
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "name": "Testlampa för popup",
+                  "icon": "mdi:test-tube",
+                  "tap_action": {
+                    "action": "more-info"
+                  },
+                  "grid_options": {
+                    "columns": 2,
+                    "rows": 1
+                  },
+                  "icon_height": "40px",
+                  "entity": "switch.tegel_kok_tak",
+                  "hold_action": {
+                    "action": "toggle"
+                  },
+                  "double_tap_action": {
+                    "action": "none"
+                  }
+                },
+                {
+                  "type": "custom:apexcharts-card",
+                  "show": {
+                    "last_updated": true
+                  },
+                  "header": {
+                    "show": false,
+                    "show_states": false,
+                    "colorize_states": true
+                  },
+                  "now": {
+                    "show": false,
+                    "color": "black"
+                  },
+                  "all_series_config": {
+                    "type": "area",
+                    "stroke_width": 1,
+                    "curve": "smooth",
+                    "opacity": 0.09,
+                    "show": {
+                      "legend_value": false,
+                      "extremas": true
+                    }
+                  },
+                  "grid_options": {
+                    "columns": 12,
+                    "header": null,
+                    "show": true,
+                    "title": "Nord Pool SE2 – Future prices"
+                  },
+                  "graph_span": "48h",
+                  "span": {
+                    "start": "day"
+                  },
+                  "series": [
                     {
-                      "entity": "sensor.p1ib_active_power_plus_q1_q4",
-                      "name": "Köpt från nätet",
-                      "color": "red"
+                      "entity": "sensor.nord_pool_se2_tomorrow",
+                      "name": "Today",
+                      "color": "magenta",
+                      "extend_to": false,
+                      "data_generator": "const now = Date.now();\nreturn entity.attributes.today_prices\n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
                     },
                     {
-                      "entity": "sensor.p1ib_active_power_minus_q2_q3",
-                      "name": "Sålt till nätet",
-                      "color": "green"
+                      "entity": "sensor.nord_pool_se2_tomorrow",
+                      "name": "Tomorrow",
+                      "color": "orange",
+                      "data_generator": "const now = Date.now();\nreturn entity.attributes.prices \n  .map(p => [\n    new Date(p.start).getTime(),\n    p.price / 1000\n  ]);\n"
                     }
                   ],
-                  "days_to_show": 20,
-                  "period": "day",
-                  "chart_type": "line",
-                  "stat_types": [
-                    "mean",
-                    "min"
-                  ],
-                  "hide_legend": false,
-                  "expand_legend": true,
-                  "logarithmic_scale": false,
-                  "energy_date_selection": false
+                  "apex_config": {
+                    "legend": {
+                      "show": false
+                    },
+                    "xaxis": {
+                      "type": "datetime",
+                      "tickAmount": 8,
+                      "labels": {
+                        "datetimeUTC": false,
+                        "formatter": "EVAL:function(value, timestamp) {\n  const d = new Date(timestamp);\n  return d.toLocaleTimeString([], {\n    hour: '2-digit',\n  \n    hour12: false\n  });\n}\n"
+                      }
+                    },
+                    "grid": {
+                      "strokeDashArray": 0,
+                      "borderColor": "#888",
+                      "xaxis": {
+                        "lines": {
+                          "show": true
+                        }
+                      }
+                    },
+                    "annotations": {
+                      "xaxis": [
+                        {
+                          "x": "EVAL:Date.now()",
+                          "borderColor": "blue",
+                          "strokeDashArray": 0,
+                          "borderWidth": 2
+                        }
+                      ]
+                    }
+                  }
                 }
               ],
               "column_span": 1
@@ -282,7 +361,32 @@
                 }
               ]
             }
-          ]
+          ],
+          "footer": {
+            "card": {
+              "type": "custom:auto-entities",
+              "show_empty": false,
+              "filter": {
+                "include": [
+                  {
+                    "options": {},
+                    "label": "warn_when_off",
+                    "state": "/^(off|closed)$/"
+                  }
+                ]
+              },
+              "card": {
+                "type": "entities",
+                "card_mod": {
+                  "style": "ha-card {\n  border: 4px solid red;\n}\n"
+                }
+              },
+              "grid_options": {
+                "columns": 9,
+                "rows": "auto"
+              }
+            }
+          }
         }
       ]
     }

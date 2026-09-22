@@ -79,7 +79,10 @@
                       }
                     },
                     "yaxis": {
-                      "min": 2.0
+                      "min": -1,
+                      "max": "EVAL:function(max) { return max > 2 ? max : 2; }",
+                      "forceNiceScale": true,
+                      "decimalsInFloat": 0
                     },
                     "grid": {
                       "xaxis": {
@@ -303,8 +306,36 @@
                 {
                   "type": "tile",
                   "entity": "notify.arvidsphone"
+                },
+                {
+                  "type": "tile",
+                  "entity": "sensor.arvids_kontor_media",
+                  "vertical": false,
+                  "features_position": "bottom"
                 }
               ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Arvidsphoneoldvideostream"
+                },
+                {
+                  "type": "picture-entity",
+                  "entity": "camera.arvidsphoneoldvideostream",
+                  "camera_view": "live",
+                  "show_name": false,
+                  "show_state": false,
+                  "aspect_ratio": "16:9",
+                  "grid_options": {
+                    "columns": 24,
+                    "rows": 3
+                  }
+                }
+              ],
+              "column_span": 2
             }
           ],
           "footer": {}

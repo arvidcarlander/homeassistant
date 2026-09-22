@@ -5,9 +5,38 @@
   "data": {
     "core": {
       "apps_info_dismissed": true,
-      "default_panel": "liten-kiosk",
+      "default_panel": "dashboard-mobil",
       "showEntityIdPicker": true
     },
-    "theme": {}
+    "theme": {
+      "dark": true
+    },
+    "language": {
+      "language": "en",
+      "number_format": "language",
+      "time_format": "language",
+      "date_format": "YMD",
+      "time_zone": "local",
+      "first_weekday": "language"
+    },
+    "sidebar": {
+      "panelOrder": [
+        "dashboard-mobil",
+        "liten-kiosk",
+        "arvids-dashboard",
+        "energy",
+        "dashboard-auto",
+        "map",
+        "logbook",
+        "history",
+        "home",
+        "light",
+        "maintenance",
+        "media-browser",
+        "todo",
+        "hacs"
+      ],
+      "hiddenPanels": []
+    }
   }
 }

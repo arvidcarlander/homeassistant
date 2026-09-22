@@ -45,6 +45,106 @@
         "domain": "hacs",
         "is_persistent": false,
         "issue_id": "restart_required_300358676_tags/7.1.27"
+      },
+      {
+        "created": "2026-09-21T14:03:46.901225+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.arvids_dashboard_2026-09-21T14:03:46.900086+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.arvids_dashboard",
+          "original_path": "/config/.storage/lovelace.arvids_dashboard",
+          "corrupt_path": "/config/.storage/lovelace.arvids_dashboard.corrupt.2026-09-21T14:03:46.900086+00:00",
+          "error": "Error while loading /config/.storage/lovelace.arvids_dashboard: unexpected character: line 85 column 21 (char 3215)"
+        }
+      },
+      {
+        "created": "2026-09-21T14:04:38.639788+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.arvids_dashboard_2026-09-21T14:04:38.638768+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.arvids_dashboard",
+          "original_path": "/config/.storage/lovelace.arvids_dashboard",
+          "corrupt_path": "/config/.storage/lovelace.arvids_dashboard.corrupt.2026-09-21T14:04:38.638768+00:00",
+          "error": "Error while loading /config/.storage/lovelace.arvids_dashboard: unexpected character: line 84 column 41 (char 3196)"
+        }
+      },
+      {
+        "created": "2026-09-22T09:49:34.662985+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-22T09:49:34.637992+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-22T09:49:34.637992+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: trailing comma is not allowed: line 290 column 36 (char 10150)"
+        }
+      },
+      {
+        "created": "2026-09-22T10:10:16.970423+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-22T10:10:16.968720+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-22T10:10:16.968720+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: unexpected character: line 313 column 21 (char 10875)"
+        }
+      },
+      {
+        "created": "2026-09-22T10:11:26.835098+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": true,
+        "issue_id": "storage_corruption_lovelace.dashboard_mobil_2026-09-22T10:11:26.829052+00:00",
+        "breaks_in_ha_version": null,
+        "data": null,
+        "is_fixable": true,
+        "issue_domain": "lovelace",
+        "learn_more_url": null,
+        "severity": "critical",
+        "translation_key": "storage_corruption",
+        "translation_placeholders": {
+          "storage_key": "lovelace.dashboard_mobil",
+          "original_path": "/config/.storage/lovelace.dashboard_mobil",
+          "corrupt_path": "/config/.storage/lovelace.dashboard_mobil.corrupt.2026-09-22T10:11:26.829052+00:00",
+          "error": "Error while loading /config/.storage/lovelace.dashboard_mobil: unexpected character: line 313 column 21 (char 10875)"
+        }
       }
     ]
   }

@@ -18,6 +18,21 @@
         "wake_word_entity": null,
         "wake_word_id": null,
         "prefer_local_intents": false
+      },
+      {
+        "conversation_engine": "conversation.home_assistant",
+        "conversation_language": "en",
+        "id": "01m307mwmy1yqe4mxrnw0mrzht",
+        "language": "en",
+        "name": "Home Assistant Cloud",
+        "stt_engine": "stt.home_assistant_cloud",
+        "stt_language": "en-AU",
+        "tts_engine": "tts.home_assistant_cloud",
+        "tts_language": "en-AU",
+        "tts_voice": "AnnetteNeural",
+        "wake_word_entity": null,
+        "wake_word_id": null,
+        "prefer_local_intents": false
       }
     ],
     "preferred_item": "01kyvva7q2gktqtfmhh1bdfshw"
