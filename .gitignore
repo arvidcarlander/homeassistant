@@ -1,15 +1,28 @@
-blueprints
-custom_components
-deps
-home-assistant.log
-home-assistant.log.1
-home-assistant.log.fault
-home-assistant_v2.db
-home-assistant_v2.db-shm
-home-assistant_v2.db-wal
-.cache
-core.config_entries
-auth
+# Directories not meant to be version-controlled
+blueprints/
+custom_components/
+deps/
 backups/
+.cache/
+
+# Nabu Casa Cloud: private keys, ACME certs, and remote-access auth tokens
+.cloud/
+
+# Secrets referenced via !secret in YAML configs
+secrets.yaml
+
+# Runtime logs and database files
+home-assistant.log*
+home-assistant_v2.db*
+
+# Sensitive Home Assistant internal state (auth/session/cloud data only —
+# other .storage/* files, e.g. lovelace dashboards, remain tracked)
+/.storage/auth
+/.storage/auth_provider.homeassistant
+/.storage/http
+/.storage/http.auth
+/.storage/core.config_entries
+/.storage/cloud
+
+# Misc
 custom_icons/*.zip
-.storage/auth
